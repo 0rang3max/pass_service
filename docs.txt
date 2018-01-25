@@ -1,7 +1,0 @@
-drop database pass_service;
-create database pass_service;
-
-alter database pass_service owner to %user%;
-alter database pass_service set timezone = 'UTC';
-alter database pass_service set default_transaction_isolation = 'read committed';
-alter database pass_service set client_encoding = 'UTF8';
