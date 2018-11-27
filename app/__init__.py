@@ -88,6 +88,7 @@ def check_key(key):
     """
     Проверка ключа. Возвращает информацию информацию о ключе: не выдан, выдан, погашен.
     """
+    print(aaa)
     stored_key = Keys.query.filter_by(key=key).first()
     if stored_key:
         return 'Погашен' if stored_key.used else 'Выдан'
